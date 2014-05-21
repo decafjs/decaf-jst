@@ -6,8 +6,7 @@
 
 (function() {
 
-    var fs = require('fs'),
-        Jst = require('lib/Jst').Jst;
+    var Jst = require('lib/Jst').Jst;
 
     include.path.push('./jst');
     require.path.push('./jst');
