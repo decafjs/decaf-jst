@@ -8,8 +8,8 @@
 
     var Jst = require('lib/Jst').Jst;
 
-    include.path.push('./jst');
-    require.path.push('./jst');
+    include.paths.push('./jst');
+    require.paths.push('./jst');
     require.extensions.jst = include.extensions.jst = function(fn) {
         return Jst.exec(fn, {
             r: '',
